@@ -1,0 +1,17 @@
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local Node / Python / Test artifacts
+node_modules/
+__pycache__/
+*.pyc
+.lighthouseci/
+
