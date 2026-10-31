@@ -301,7 +301,6 @@
       /* Tech Tags */
       var tagsUl = document.createElement("ul");
       tagsUl.className = "tech-tags";
-      tagsUl.setAttribute("aria-label", "Technologies");
       for (var t = 0; t < proj.tech.length; t++) {
         var tagLi = document.createElement("li");
         tagLi.className = "tech-tag";
@@ -609,7 +608,6 @@
 
       var toolsUl = document.createElement("ul");
       toolsUl.className = "tech-tags";
-      toolsUl.setAttribute("aria-label", "Tools");
       for (var t = 0; t < (item.tools || []).length; t++) {
         var tLi = document.createElement("li");
         tLi.className = "tech-tag";
@@ -753,7 +751,6 @@
         if (pInfo.tech && pInfo.tech.length > 0) {
           var pTechUl = document.createElement("ul");
           pTechUl.className = "tech-tags";
-          pTechUl.setAttribute("aria-label", "Hackathon Technologies");
           for (var pt = 0; pt < pInfo.tech.length; pt++) {
             var ptLi = document.createElement("li");
             ptLi.className = "tech-tag";
