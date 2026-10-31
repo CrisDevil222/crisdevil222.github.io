@@ -1,94 +1,788 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sơn | Cyber Security Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://crisdevil222.github.io; connect-src 'self' https://api.github.com; base-uri 'self'; form-action 'self'; object-src 'none'">
+  <title>Phạm Hoàng Sơn | Information Security Student &amp; Developer</title>
+  <meta name="description" content="Portfolio of Phạm Hoàng Sơn — Information Security student who builds security labs, web platforms and mobile apps with Python, TypeScript and JavaScript.">
+  <meta name="author" content="Phạm Hoàng Sơn">
+  <meta name="theme-color" content="#07080d">
+  <link rel="canonical" href="https://crisdevil222.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Phạm Hoàng Sơn — Portfolio">
+  <meta property="og:title" content="Phạm Hoàng Sơn | Information Security Student &amp; Developer">
+  <meta property="og:description" content="Information Security student who builds security labs, web platforms and mobile apps with Python, TypeScript and JavaScript.">
+  <meta property="og:url" content="https://crisdevil222.github.io/">
+  <meta property="og:image" content="https://crisdevil222.github.io/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Phạm Hoàng Sơn — Information Security student and Developer">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Phạm Hoàng Sơn | Information Security Student &amp; Developer">
+  <meta name="twitter:description" content="Information Security student who builds security labs, web platforms and mobile apps with Python, TypeScript and JavaScript.">
+  <meta name="twitter:image" content="https://crisdevil222.github.io/og-image.png">
+
+  <!-- Fonts: Space Grotesk (headings), Inter (body), JetBrains Mono (tech tags) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Space+Grotesk:wght@300;500;600;700&amp;display=swap">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+  <!-- JSON-LD Structured Data (Person) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Phạm Hoàng Sơn",
+    "url": "https://crisdevil222.github.io/",
+    "jobTitle": "Information Security Student & Developer",
+    "email": "mailto:crishoang09@gmail.com",
+    "sameAs": [
+      "https://github.com/CrisDevil222"
+    ],
+    "knowsAbout": [
+      "Information Security",
+      "Python",
+      "TypeScript",
+      "JavaScript",
+      "Next.js",
+      "Flask",
+      "Docker",
+      "PostgreSQL"
+    ]
+  }
+  </script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">root@son-sec:~$</div>
-        <ul class="nav-links">
-            <li><a href="#about">./about_me</a></li>
-            <li><a href="#skills">./skills</a></li>
-            <li><a href="#projects">./projects</a></li>
+  <a href="#main-content" class="skip-link" data-i18n="skipToContent">Skip to main content</a>
+  <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- 1. TOP UTILITY BAR -->
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <div class="utility-socials">
+        <a href="https://github.com/CrisDevil222" data-github-link class="utility-icon-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+            <path d="M9 18c-4.51 2-5-2-7-2"></path>
+          </svg>
+          <span>GitHub</span>
+        </a>
+
+        <a id="utility-linkedin" href="https://linkedin.com" class="utility-icon-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+
+      <div class="utility-right">
+        <a href="#contact" data-mailto-link class="utility-email" data-email-text>crishoang09 [at] gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. STICKY NAVBAR -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="#home" class="brand-logo" aria-label="Sơn — Home">
+        <span>Sơn</span><span class="brand-dot" aria-hidden="true">.</span>
+      </a>
+
+      <nav aria-label="Primary">
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#home" class="nav-link is-active" data-i18n="nav.home">Home</a></li>
+          <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="#writeups" class="nav-link" data-i18n="nav.writeups">Writeups</a></li>
+          <li><a href="#contests" class="nav-link" data-i18n="nav.contests">Contests</a></li>
+          <li><a href="#stack" class="nav-link" data-i18n="nav.stack">Stack</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
         </ul>
-    </nav>
+      </nav>
 
-    <header class="hero">
-        <div class="container">
-            <h1 class="glitch" data-text="Hi, I'm Sơn.">Hi, I'm Sơn.</h1>
-            <p class="subtitle">> Information Security Student & Cyber Enthusiast_</p>
-            <div class="social-links">
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-solid fa-envelope"></i></a>
-            </div>
-        </div>
-    </header>
+      <div class="nav-actions">
+        <button type="button" id="lang-toggle" class="lang-switch-btn" aria-label="Switch language to Vietnamese" data-i18n-aria="nav.toggleLang">
+          <span id="lang-toggle-label">EN</span>
+        </button>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title"><i class="fa-solid fa-user-secret"></i> whoami</h2>
-            <div class="terminal-window">
-                <div class="terminal-header">
-                    <span class="btn red"></span>
-                    <span class="btn yellow"></span>
-                    <span class="btn green"></span>
-                </div>
-                <div class="terminal-body">
-                    <p><span class="prompt">son@kali:~$</span> cat info.txt</p>
-                    <p>Tôi là một sinh viên chuyên ngành An toàn Thông tin với niềm đam mê mãnh liệt dành cho Cyber Security. Tôi thường xuyên dành thời gian nghiên cứu về Network Security, phân tích mã độc (Malware Analysis) và hệ thống tự động hóa.</p>
-                    <p>Bên cạnh việc học thuật, tôi là một người chơi hệ Capture The Flag (CTF) và luôn tìm kiếm các lỗ hổng hệ thống để rèn luyện kỹ năng phòng thủ thực chiến.</p>
-                </div>
-            </div>
+        <a href="#contact" data-mailto-link class="btn-pill btn-pill-sm" data-i18n="nav.contactMe">Contact me</a>
+
+        <button type="button" id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu" data-i18n-aria="nav.toggleMenu">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="18" x2="20" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- 3. HERO SECTION -->
+    <section id="home" class="hero-section" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1 id="hero-heading">
+            <span class="hero-greeting" data-i18n="hero.greeting">Hi, I'm</span>
+            <span id="hero-name" class="hero-name">Phạm Hoàng Sơn</span>
+          </h1>
+
+          <p id="hero-bio" class="hero-bio">
+            Information Security student who builds security labs, web platforms and mobile apps with Python, TypeScript and JavaScript.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" data-mailto-link class="btn-pill" data-i18n="hero.ctaPrimary">Contact me</a>
+            <a href="#projects" class="link-arrow" data-i18n="hero.ctaSecondary">View projects →</a>
+          </div>
         </div>
+
+        <div class="hero-visual-wrap" aria-hidden="true">
+          <!-- Static striped circle decoration -->
+          <svg class="deco-striped-circle" viewBox="0 0 64 64" fill="none">
+            <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4"></circle>
+            <line x1="12" y1="52" x2="52" y2="12" stroke="currentColor" stroke-width="1.2"></line>
+            <line x1="8" y1="40" x2="40" y2="8" stroke="currentColor" stroke-width="1.2"></line>
+            <line x1="24" y1="56" x2="56" y2="24" stroke="currentColor" stroke-width="1.2"></line>
+          </svg>
+
+          <!-- Static 4-point star decorations -->
+          <svg class="deco-star deco-star-1" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0L14.8 9.2L24 12L14.8 14.8L12 24L9.2 14.8L0 12L9.2 9.2L12 0Z"></path>
+          </svg>
+          <svg class="deco-star deco-star-2" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0L14.8 9.2L24 12L14.8 14.8L12 24L9.2 14.8L0 12L9.2 9.2L12 0Z"></path>
+          </svg>
+
+          <div id="hero-3d-stage" class="hero-3d-stage">
+            <svg id="hero-3d-fallback" class="hero-3d-fallback" viewBox="0 0 260 260" fill="none" aria-hidden="true">
+              <!-- Outer Icosahedron Wireframe (#3d4dff) -->
+              <g stroke="#3d4dff" stroke-width="1.4" stroke-opacity="0.78" stroke-linejoin="round">
+                <polygon points="130,22 216,72 216,188 130,238 44,188 44,72"></polygon>
+                <polygon points="130,22 186,98 74,98"></polygon>
+                <polygon points="74,98 186,98 130,178"></polygon>
+                <polygon points="44,72 74,98 44,188"></polygon>
+                <polygon points="216,72 186,98 216,188"></polygon>
+                <polygon points="44,188 130,178 130,238"></polygon>
+                <polygon points="216,188 130,178 130,238"></polygon>
+                <line x1="130" y1="22" x2="44" y2="72"></line>
+                <line x1="130" y1="22" x2="216" y2="72"></line>
+                <line x1="74" y1="98" x2="130" y2="238"></line>
+                <line x1="186" y1="98" x2="130" y2="238"></line>
+              </g>
+              <!-- Inner Counter-Rotated Polyhedron (#7c5cff) -->
+              <g stroke="#7c5cff" stroke-width="1.25" stroke-opacity="0.72" stroke-linejoin="round">
+                <polygon points="130,72 178,108 160,168 100,168 82,108"></polygon>
+                <line x1="130" y1="72" x2="130" y2="188"></line>
+                <line x1="82" y1="108" x2="160" y2="168"></line>
+                <line x1="178" y1="108" x2="100" y2="168"></line>
+                <line x1="100" y1="168" x2="130" y2="188"></line>
+                <line x1="160" y1="168" x2="130" y2="188"></line>
+              </g>
+              <!-- Glowing Vertex Nodes (#6a74ff) -->
+              <g fill="#6a74ff">
+                <circle cx="130" cy="22" r="3.5"></circle>
+                <circle cx="216" cy="72" r="3.5"></circle>
+                <circle cx="216" cy="188" r="3.5"></circle>
+                <circle cx="130" cy="238" r="3.5"></circle>
+                <circle cx="44" cy="188" r="3.5"></circle>
+                <circle cx="44" cy="72" r="3.5"></circle>
+                <circle cx="74" cy="98" r="3.2"></circle>
+                <circle cx="186" cy="98" r="3.2"></circle>
+                <circle cx="130" cy="178" r="3.2"></circle>
+              </g>
+              <g fill="#e6e8f0" fill-opacity="0.85">
+                <circle cx="130" cy="72" r="2.4"></circle>
+                <circle cx="178" cy="108" r="2.4"></circle>
+                <circle cx="160" cy="168" r="2.4"></circle>
+                <circle cx="100" cy="168" r="2.4"></circle>
+                <circle cx="82" cy="108" r="2.4"></circle>
+                <circle cx="130" cy="188" r="2.4"></circle>
+              </g>
+            </svg>
+          </div>
+
+          <div class="static-seal">
+            <span class="static-seal-dot"></span>
+            <span>Security • Code • CTF •</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title"><i class="fa-solid fa-code"></i> Tech Stack</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Security & CTF</h3>
-                    <p>Penetration Testing, Malware Analysis, Web Exploitation, Cryptography</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Programming</h3>
-                    <p>Python, ASP.NET Core MVC 8.0, SQL Server</p>
-                </div>
-                <div class="skill-card">
-                    <h3>DevOps & SysAdmin</h3>
-                    <p>Docker, Ansible, Network Administration, Linux/Kali</p>
-                </div>
-            </div>
+    <!-- 4. PROJECTS + CASE STUDY SECTION -->
+    <section id="projects" class="section reveal" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="kicker-row">
+            <span class="section-kicker" data-i18n="projects.kicker">PROJECTS</span>
+            <span id="projects-count-badge" class="kicker-count" data-count="3">3</span>
+          </div>
+          <h2 id="projects-heading" class="section-title">
+            <span data-i18n="projects.titlePrefix">Featured </span><span class="text-primary" data-i18n="projects.titleHighlight">projects</span>
+          </h2>
+          <p class="section-desc" data-i18n="projects.desc">Selected software platforms and security labs with technical architecture case studies.</p>
         </div>
+
+        <div id="projects-grid" class="projects-grid">
+          <!-- Static fallback project 1 -->
+          <article class="project-card">
+            <div class="project-header">
+              <div>
+                <h3 class="project-title">CyberSec Lab</h3>
+                <p class="project-tagline">Security Training &amp; Monitoring Platform</p>
+              </div>
+            </div>
+            <ul class="tech-tags" aria-label="Technologies">
+              <li class="tech-tag">Python</li>
+              <li class="tech-tag">Flask</li>
+              <li class="tech-tag">WebSocket</li>
+              <li class="tech-tag">scikit-learn</li>
+              <li class="tech-tag">Docker</li>
+            </ul>
+            <ul class="project-bullets">
+              <li>Built a cybersecurity platform featuring Red Team labs (XSS, SQLi, Command Injection) and a Blue Team defense dashboard.</li>
+              <li>Engineered real-time SOC monitoring over WebSocket alongside an ML-based phishing URL detector and port scanner.</li>
+              <li>Secured the platform with TOTP 2FA and RBAC, containerized and deployed via Docker.</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/CrisDevil222/cyber-sec-lab" class="btn-outline" target="_blank" rel="noopener noreferrer">Repository</a>
+            </div>
+            <details class="case-study">
+              <summary>View case study</summary>
+              <div class="case-study-body">
+                <div class="case-study-block">
+                  <h4>Problem</h4>
+                  <p>Needed a unified environment for practicing offensive web vulnerabilities while observing defensive telemetry in real time.</p>
+                </div>
+                <div class="case-study-block">
+                  <h4>Approach</h4>
+                  <p>Separated Red Team vulnerable labs from the Blue Team SOC dashboard and connected live event streams over WebSocket.</p>
+                </div>
+                <div class="case-study-block">
+                  <h4>Key decisions</h4>
+                  <p>Implemented TOTP 2FA + RBAC for access control, integrated a scikit-learn model for phishing URL detection alongside a port scanner, and packaged the stack with Docker.</p>
+                </div>
+              </div>
+            </details>
+          </article>
+
+          <!-- Static fallback project 2 -->
+          <article class="project-card">
+            <div class="project-header">
+              <div>
+                <h3 class="project-title">Math AI Lab</h3>
+                <p class="project-tagline">2D/3D Math Visualization Mobile App</p>
+              </div>
+            </div>
+            <ul class="tech-tags" aria-label="Technologies">
+              <li class="tech-tag">JavaScript</li>
+              <li class="tech-tag">Capacitor</li>
+              <li class="tech-tag">Swift</li>
+              <li class="tech-tag">Groq API</li>
+              <li class="tech-tag">GitHub Actions</li>
+            </ul>
+            <ul class="project-bullets">
+              <li>Cross-platform iOS/Android mobile app featuring an interactive 3D spatial geometry viewer and advanced 2D graphing calculator.</li>
+              <li>Integrated an LLM assistant (Groq API) to construct 3D geometry scenes from Vietnamese prompts alongside symbolic calculus analysis.</li>
+              <li>Authored native Swift plugins for iOS and automated .ipa/.apk release pipelines using GitHub Actions CI/CD.</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/CrisDevil222/Math-AI-Lab" class="btn-outline" target="_blank" rel="noopener noreferrer">Repository</a>
+            </div>
+            <details class="case-study">
+              <summary>View case study</summary>
+              <div class="case-study-body">
+                <div class="case-study-block">
+                  <h4>Problem</h4>
+                  <p>Visualizing 3D spatial geometry and calculus functions on mobile devices is often cumbersome without natural language input.</p>
+                </div>
+                <div class="case-study-block">
+                  <h4>Approach</h4>
+                  <p>Built a cross-platform iOS/Android app with Capacitor combining 3D spatial rendering, 2D graphing, calculus analysis, and an LLM assistant.</p>
+                </div>
+                <div class="case-study-block">
+                  <h4>Key decisions</h4>
+                  <p>Used Groq API to generate 3D geometry from Vietnamese prompts, wrote custom Swift plugins for iOS, and automated .ipa/.apk builds via GitHub Actions CI/CD.</p>
+                </div>
+              </div>
+            </details>
+          </article>
+
+          <!-- Static fallback project 3 -->
+          <article class="project-card">
+            <div class="project-header">
+              <div>
+                <h3 class="project-title">Transport Management System (TMS)</h3>
+                <p class="project-tagline">Client Project — Container Logistics Platform</p>
+              </div>
+              <div class="project-meta-badges">
+                <span class="meta-pill meta-pill-client">Client project – demo upon request</span>
+              </div>
+            </div>
+            <ul class="tech-tags" aria-label="Technologies">
+              <li class="tech-tag">TypeScript</li>
+              <li class="tech-tag">Next.js 14+</li>
+              <li class="tech-tag">Prisma</li>
+              <li class="tech-tag">PostgreSQL</li>
+            </ul>
+            <ul class="project-bullets">
+              <li>Developed a custom logistics platform replacing manual spreadsheet workflows for a container transport business.</li>
+              <li>Built core operational modules: shipment tracking, vehicle dispatch, and customer management with dynamic filtering.</li>
+              <li>Worked directly with the client to implement automated PDF transport orders and invoice export features.</li>
+            </ul>
+            <div class="project-actions">
+              <a href="#contact" data-mailto-link class="btn-outline">Contact for demo</a>
+            </div>
+            <details class="case-study">
+              <summary>View case study</summary>
+              <div class="case-study-body">
+                <div class="case-study-block">
+                  <h4>Problem</h4>
+                  <p>Manual spreadsheet workflows made container tracking, vehicle dispatch, and invoice generation slow and difficult to manage.</p>
+                </div>
+                <div class="case-study-block">
+                  <h4>Approach</h4>
+                  <p>Designed a centralized web application with Next.js 14+ and PostgreSQL covering shipment lifecycle tracking, dispatch, and customer records.</p>
+                </div>
+                <div class="case-study-block">
+                  <h4>Key decisions</h4>
+                  <p>Used TypeScript and Prisma ORM with PostgreSQL for type-safe data access, added dynamic filtering, and built automated PDF transport orders and billing exports directly from client requirements.</p>
+                </div>
+              </div>
+            </details>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title"><i class="fa-solid fa-folder-open"></i> Recent Operations</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3><i class="fa-solid fa-shield-halved"></i> Secure E-commerce Platform</h3>
-                    <p>Phát triển ứng dụng thương mại điện tử tích hợp các cơ chế bảo mật nâng cao: hệ thống Anti-bot Login, nhận diện khuôn mặt (Facial Recognition) và tích hợp module phát hiện Deepfake.</p>
-                </div>
-                <div class="project-card">
-                    <h3><i class="fa-solid fa-trophy"></i> RMIT Hackathon 2025</h3>
-                    <p>Tham gia nghiên cứu và phát triển giải pháp công nghệ dưới áp lực thời gian thực, phối hợp làm việc nhóm và giải quyết các bài toán kỹ thuật phức tạp.</p>
-                </div>
-                <div class="project-card">
-                    <h3><i class="fa-solid fa-network-wired"></i> CyberSec Lab & SOC</h3>
-                    <p>Xây dựng môi trường giả lập tấn công/phòng thủ mạng với Flask, tích hợp trung tâm giám sát SOC, cảnh báo DDoS và các module phân tích lỗ hổng.</p>
-                </div>
-            </div>
+    <!-- 5. CTF WRITEUPS SECTION -->
+    <section id="writeups" class="section reveal" aria-labelledby="writeups-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker" data-i18n="writeups.kicker">CTF WRITEUPS</span>
+          <h2 id="writeups-heading" class="section-title">
+            <span data-i18n="writeups.titlePrefix">Technical </span><span class="text-primary" data-i18n="writeups.titleHighlight">writeups</span>
+          </h2>
+          <p class="section-desc" data-i18n="writeups.desc">Challenge breakdowns and exploit analyses across Web, Forensics, PWN, Reverse Engineering, and AI.</p>
         </div>
+
+        <div class="writeups-controls">
+          <div id="writeup-event-filters" class="event-counters" role="group" aria-label="Filter writeups by contest"></div>
+          <div id="writeup-category-filters" class="filter-row" role="group" aria-label="Filter writeups by category"></div>
+        </div>
+
+        <div id="writeups-list" class="writeups-list">
+          <article class="writeup-card">
+            <div class="writeup-top">
+              <div class="writeup-badges">
+                <span class="badge-event">Hacktheon Sejong 2026</span>
+                <span class="badge-category">Forensics / Misc</span>
+              </div>
+              <span class="badge-lang">EN</span>
+            </div>
+            <h3 class="writeup-title">Plottergeist (Acoustic Side-Channel)</h3>
+            <p class="writeup-summary">Reconstructed the flag drawn by a CoreXY plotter by decoding stepper motor packets from a PCAP capture and using audio RMS energy to separate active pen strokes from travel moves.</p>
+            <div class="writeup-bottom">
+              <ul class="tech-tags" aria-label="Tools">
+                <li class="tech-tag">Python</li>
+                <li class="tech-tag">Scapy</li>
+                <li class="tech-tag">SciPy</li>
+                <li class="tech-tag">NumPy</li>
+                <li class="tech-tag">Matplotlib</li>
+              </ul>
+              <a href="https://app.notion.com/p/Forensics-Plottergeist-Acoustic-Side-Channel-Writeup-34d95c7f0a5f80829873f880eae816bd" class="link-arrow" target="_blank" rel="noopener noreferrer">Read writeup →</a>
+            </div>
+          </article>
+
+          <article class="writeup-card">
+            <div class="writeup-top">
+              <div class="writeup-badges">
+                <span class="badge-event">Hacktheon Sejong 2026</span>
+                <span class="badge-category">Web</span>
+              </div>
+              <span class="badge-lang">EN</span>
+            </div>
+            <h3 class="writeup-title">SQL Injection – Bypass Login</h3>
+            <p class="writeup-summary">Bypassed admin authentication caused by raw f-string SQL query concatenation, documented alongside the remediation using parameterized queries.</p>
+            <div class="writeup-bottom">
+              <ul class="tech-tags" aria-label="Tools">
+                <li class="tech-tag">Python (Flask)</li>
+                <li class="tech-tag">SQLite</li>
+              </ul>
+              <a href="https://app.notion.com/p/Hacktheon-Sejong-2026-34d95c7f0a5f80648a36d2a7a29f72c3" class="link-arrow" target="_blank" rel="noopener noreferrer">Read writeup →</a>
+            </div>
+          </article>
+
+          <article class="writeup-card">
+            <div class="writeup-top">
+              <div class="writeup-badges">
+                <span class="badge-event">Hacktheon Sejong 2026</span>
+                <span class="badge-category">Web</span>
+              </div>
+              <span class="badge-lang">EN</span>
+            </div>
+            <h3 class="writeup-title">Dark Harbor</h3>
+            <p class="writeup-summary">Chained an SSRF via the build-runner redirect mechanism with a URL-encoding handling flaw across a polyglot microservice architecture to read internal files behind the proxy.</p>
+            <div class="writeup-bottom">
+              <ul class="tech-tags" aria-label="Tools">
+                <li class="tech-tag">Rust proxy</li>
+                <li class="tech-tag">Node.js/Fastify</li>
+                <li class="tech-tag">Go</li>
+                <li class="tech-tag">Python/FastAPI</li>
+              </ul>
+              <a href="https://app.notion.com/p/Hacktheon-Sejong-2026-34d95c7f0a5f80648a36d2a7a29f72c3" class="link-arrow" target="_blank" rel="noopener noreferrer">Read writeup →</a>
+            </div>
+          </article>
+
+          <article class="writeup-card">
+            <div class="writeup-top">
+              <div class="writeup-badges">
+                <span class="badge-event">Hacktheon Sejong 2026</span>
+                <span class="badge-category">AI / Misc</span>
+              </div>
+              <span class="badge-lang">EN</span>
+            </div>
+            <h3 class="writeup-title">Voice Clone</h3>
+            <p class="writeup-summary">Performed zero-shot voice cloning from 5 reference audio samples to pass both speaker similarity and speech-to-text verification thresholds (&gt; 0.8).</p>
+            <div class="writeup-bottom">
+              <ul class="tech-tags" aria-label="Tools">
+                <li class="tech-tag">Python</li>
+                <li class="tech-tag">Coqui TTS (YourTTS)</li>
+                <li class="tech-tag">FFmpeg</li>
+                <li class="tech-tag">Miniconda</li>
+              </ul>
+              <a href="https://app.notion.com/p/Hacktheon-Sejong-2026-34d95c7f0a5f80648a36d2a7a29f72c3" class="link-arrow" target="_blank" rel="noopener noreferrer">Read writeup →</a>
+            </div>
+          </article>
+
+          <article class="writeup-card">
+            <div class="writeup-top">
+              <div class="writeup-badges">
+                <span class="badge-event">Hacktheon Sejong 2026</span>
+                <span class="badge-category">PWN · 250 pts</span>
+              </div>
+              <span class="badge-lang">EN</span>
+            </div>
+            <h3 class="writeup-title">Immutable</h3>
+            <p class="writeup-summary">Exploited a stack buffer overflow via unbounded scanf("%s") to overwrite an adjacent local variable, bypass the check, and spawn a shell.</p>
+            <div class="writeup-bottom">
+              <ul class="tech-tags" aria-label="Tools">
+                <li class="tech-tag">Python</li>
+                <li class="tech-tag">netcat</li>
+              </ul>
+              <a href="https://app.notion.com/p/Hacktheon-Sejong-2026-34d95c7f0a5f80648a36d2a7a29f72c3" class="link-arrow" target="_blank" rel="noopener noreferrer">Read writeup →</a>
+            </div>
+          </article>
+
+          <article class="writeup-card">
+            <div class="writeup-top">
+              <div class="writeup-badges">
+                <span class="badge-event">Hacktheon Sejong 2026</span>
+                <span class="badge-category">Reverse Engineering</span>
+              </div>
+              <span class="badge-lang">EN</span>
+            </div>
+            <h3 class="writeup-title">Recover It!</h3>
+            <p class="writeup-summary">Reverse-engineered an index-based XOR transformation over static data tables in the binary and wrote a Python solver to recover the valid input string.</p>
+            <div class="writeup-bottom">
+              <ul class="tech-tags" aria-label="Tools">
+                <li class="tech-tag">Ghidra</li>
+                <li class="tech-tag">Python</li>
+              </ul>
+              <a href="https://app.notion.com/p/Hacktheon-Sejong-2026-34d95c7f0a5f80648a36d2a7a29f72c3" class="link-arrow" target="_blank" rel="noopener noreferrer">Read writeup →</a>
+            </div>
+          </article>
+
+          <article class="writeup-card">
+            <div class="writeup-top">
+              <div class="writeup-badges">
+                <span class="badge-event">BKISC CTF 2026</span>
+                <span class="badge-category">Forensics / Memory Analysis · 280 pts · Medium</span>
+              </div>
+              <span class="badge-lang">VI</span>
+            </div>
+            <h3 class="writeup-title">Beautiful Memory</h3>
+            <p class="writeup-summary">Analyzed a Windows 10 memory dump, extracting the real flag encoded in UTF-16LE strings while filtering out decoy ASCII flags.</p>
+            <div class="writeup-bottom">
+              <ul class="tech-tags" aria-label="Tools">
+                <li class="tech-tag">file</li>
+                <li class="tech-tag">strings</li>
+                <li class="tech-tag">Volatility 2</li>
+              </ul>
+              <a href="https://app.notion.com/p/BKISC-CTF-2026-2a495c7f0a5f80919218c5f149edfa35" class="link-arrow" target="_blank" rel="noopener noreferrer">Read writeup →</a>
+            </div>
+          </article>
+
+          <article class="writeup-card">
+            <div class="writeup-top">
+              <div class="writeup-badges">
+                <span class="badge-event">BKISC CTF 2026</span>
+                <span class="badge-category">Digital Forensics / Network Analysis · 275 pts · Medium–Hard</span>
+              </div>
+              <span class="badge-lang">VI</span>
+            </div>
+            <h3 class="writeup-title">Lookout</h3>
+            <p class="writeup-summary">Reconstructed a multi-stage attack chain from a malicious Excel DDE payload to PowerShell and Outlook WebView (Specula) C2 persistence, decrypting RC4 traffic.</p>
+            <div class="writeup-bottom">
+              <ul class="tech-tags" aria-label="Tools">
+                <li class="tech-tag">FTK Imager</li>
+                <li class="tech-tag">Python</li>
+              </ul>
+              <a href="https://app.notion.com/p/BKISC-CTF-2026-2a495c7f0a5f80919218c5f149edfa35" class="link-arrow" target="_blank" rel="noopener noreferrer">Read writeup →</a>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <p>> System halt. Coded with <i class="fa-solid fa-heart" style="color: #ff4444;"></i> by Sơn © 2026</p>
-    </footer>
+    <!-- 6. CONTESTS TIMELINE SECTION -->
+    <section id="contests" class="section reveal" aria-labelledby="contests-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker" data-i18n="contests.kicker">CONTESTS</span>
+          <h2 id="contests-heading" class="section-title">
+            <span data-i18n="contests.titlePrefix">Competitions &amp; </span><span class="text-primary" data-i18n="contests.titleHighlight">hackathons</span>
+          </h2>
+          <p class="section-desc" data-i18n="contests.desc">Academic cybersecurity contests, CTF tournaments, and engineering hackathons.</p>
+        </div>
+
+        <div class="contests-wrap">
+          <ol id="contests-timeline" class="timeline">
+            <li class="timeline-item">
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="timeline-head">
+                <h3 class="timeline-title">Cybersecurity Student Contest Vietnam (CSCV)</h3>
+                <span class="timeline-years">2025, 2026</span>
+              </div>
+              <p class="timeline-desc">National student cybersecurity competition featuring Jeopardy and Attack-Defense CTF rounds.</p>
+            </li>
+            <li class="timeline-item">
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="timeline-head">
+                <h3 class="timeline-title">RMIT Hackathon</h3>
+                <span class="timeline-years">2025, 2026</span>
+              </div>
+              <p class="timeline-desc">2025 (Certificate of Participation), 2026 — Team software engineering and rapid prototyping competition.</p>
+              <details class="case-study contest-project-details">
+                <summary>View hackathon project &amp; case study</summary>
+                <div class="contest-project-body">
+                  <div class="contest-project-header">
+                    <h4 class="contest-project-title">ClubFund Guard</h4>
+                    <p class="contest-project-category">Challenge 2 "UNLOCKED" by Tide (Prototype with TideCloak, where no single admin, organization, or AI can bypass the rules).</p>
+                  </div>
+                  <p class="contest-project-summary">
+                    AI assistant for student club finances: AI reads ledgers and drafts expense proposals but NEVER executes transactions autonomously; funds can only be disbursed after approval from 2 out of 3 managers. Spending authority is a designated role; granting this role creates a TideCloak change request requiring a 2/3 administrator quorum approved from their respective browsers in Tide enclaves. The API verifies DPoP-bound tokens and returns 403 if the role is missing, leaving an immutable audit trail.
+                  </p>
+                  <div class="contest-project-limitations">
+                    <strong>Limitations: </strong>
+                    <span>AI assistant is a rule-based mock implementation, and financial data is simulated. Real LLMs and live money are not integrated.</span>
+                  </div>
+                  <ul class="tech-tags" aria-label="Hackathon Technologies">
+                    <li class="tech-tag">TideCloak</li>
+                    <li class="tech-tag">Next.js</li>
+                    <li class="tech-tag">Node.js</li>
+                    <li class="tech-tag">JavaScript</li>
+                    <li class="tech-tag">Docker</li>
+                  </ul>
+                  <div class="project-actions">
+                    <a href="https://tide.org/unlocked/" class="btn-outline" target="_blank" rel="noopener noreferrer">Event page</a>
+                    <a href="https://github.com/CrisDevil222/hackathon" class="btn-outline" target="_blank" rel="noopener noreferrer">Repo</a>
+                    <a href="https://github.com/CrisDevil222/hackathon/blob/main/Video.mp4" class="btn-pill btn-pill-sm" target="_blank" rel="noopener noreferrer">Demo video</a>
+                  </div>
+                  <div class="case-study-body">
+                    <div class="case-study-block">
+                      <h4>Problem</h4>
+                      <p>Student clubs traditionally rely on a single treasurer, and autonomous AI acting alone only magnifies operational risk.</p>
+                    </div>
+                    <div class="case-study-block">
+                      <h4>Approach</h4>
+                      <p>Separated operational responsibilities: AI drafts proposals, humans make governance decisions, and cryptography enforces authorization.</p>
+                    </div>
+                    <div class="case-study-block">
+                      <h4>Key decisions</h4>
+                      <p>Treated disbursement authority as an explicit role, utilized TideCloak's 2/3 decentralized quorum instead of trusted server flags, and validated DPoP cryptographic tokens at the API gateway.</p>
+                    </div>
+                  </div>
+                </div>
+              </details>
+            </li>
+            <li class="timeline-item">
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="timeline-head">
+                <h3 class="timeline-title">Hacktheon Sejong 2026</h3>
+                <span class="timeline-years">2026</span>
+              </div>
+              <p class="timeline-desc">International university cybersecurity competition covering Web, Forensics, PWN, Reverse Engineering, and AI challenges.</p>
+              <a href="#writeups" class="timeline-writeup-link">6 challenge writeups (Web, Forensics, PWN, Reverse, AI) →</a>
+            </li>
+            <li class="timeline-item">
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="timeline-head">
+                <h3 class="timeline-title">BKISC CTF 2026</h3>
+                <span class="timeline-years">2026</span>
+              </div>
+              <p class="timeline-desc">Capture The Flag competition focusing on Memory Forensics, Disk Forensics, and Network Incident Analysis.</p>
+              <a href="#writeups" class="timeline-writeup-link">2 forensics writeups →</a>
+            </li>
+            <li class="timeline-item">
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="timeline-head">
+                <h3 class="timeline-title">Other Domestic &amp; International CTF Competitions</h3>
+                <span class="timeline-years">Ongoing</span>
+              </div>
+              <p class="timeline-desc">Regularly practicing and competing in Web Exploitation, Reverse Engineering, and Digital Forensics.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. STACK (4 SPECIALITY CARDS) -->
+    <section id="stack" class="section reveal" aria-labelledby="stack-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker" data-i18n="stack.kicker">SPECIALITIES</span>
+          <h2 id="stack-heading" class="section-title">
+            <span data-i18n="stack.titlePrefix">Tech </span><span class="text-primary" data-i18n="stack.titleHighlight">stack</span>
+          </h2>
+          <p class="section-desc" data-i18n="stack.desc">Languages, frameworks, database systems, and developer tooling used across my work.</p>
+        </div>
+
+        <div id="stack-grid" class="stack-grid">
+          <div class="speciality-card">
+            <div class="speciality-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg>
+            </div>
+            <h3 class="speciality-title">Languages</h3>
+            <ul class="tech-tags">
+              <li class="tech-tag">Python</li>
+              <li class="tech-tag">TypeScript</li>
+              <li class="tech-tag">JavaScript</li>
+              <li class="tech-tag">SQL</li>
+              <li class="tech-tag">Swift</li>
+            </ul>
+          </div>
+
+          <div class="speciality-card">
+            <div class="speciality-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 10 5-10 5-10-5 10-5Z"></path><path d="m2 12 10 5 10-5"></path><path d="m2 17 10 5 10-5"></path></svg>
+            </div>
+            <h3 class="speciality-title">Frameworks &amp; Libs</h3>
+            <ul class="tech-tags">
+              <li class="tech-tag">Flask</li>
+              <li class="tech-tag">Next.js</li>
+              <li class="tech-tag">Node.js</li>
+              <li class="tech-tag">Prisma</li>
+              <li class="tech-tag">scikit-learn</li>
+              <li class="tech-tag">Capacitor</li>
+              <li class="tech-tag">WebSocket</li>
+            </ul>
+          </div>
+
+          <div class="speciality-card">
+            <div class="speciality-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8c4.97 0 9-1.34 9-3s-4.03-3-9-3-9 1.34-9 3 4.03 3 9 3Z"></path><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"></path></svg>
+            </div>
+            <h3 class="speciality-title">Data</h3>
+            <ul class="tech-tags">
+              <li class="tech-tag">PostgreSQL</li>
+            </ul>
+          </div>
+
+          <div class="speciality-card">
+            <div class="speciality-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 17 6-6-6-6"></path><path d="M12 19h8"></path></svg>
+            </div>
+            <h3 class="speciality-title">DevOps &amp; Tools</h3>
+            <ul class="tech-tags">
+              <li class="tech-tag">Docker</li>
+              <li class="tech-tag">Git</li>
+              <li class="tech-tag">GitHub Actions (CI/CD)</li>
+              <li class="tech-tag">Linux (Kali/Ubuntu)</li>
+              <li class="tech-tag">VS Code</li>
+              <li class="tech-tag">Groq API (LLM integration)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. PRE-FOOTER CTA BAND -->
+    <section id="contact" class="cta-band reveal" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="cta-box">
+          <h2 id="cta-heading" class="section-title">
+            <span data-i18n="cta.titlePrefix">Want to </span><span class="text-primary" data-i18n="cta.titleHighlight">work together?</span>
+          </h2>
+          <p class="section-desc" data-i18n="cta.desc">Available for software engineering and information security internship opportunities.</p>
+          <a href="#contact" data-mailto-link class="btn-pill" data-i18n="cta.button">Contact me</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 9. MULTI-COLUMN FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#home" class="brand-logo" aria-label="Sơn — Home">
+            <span>Sơn</span><span class="brand-dot" aria-hidden="true">.</span>
+          </a>
+          <p class="footer-tagline" data-i18n="footer.tagline">
+            Information Security student building practical security labs, web platforms, and mobile apps.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title" data-i18n="footer.quickLinks">Quick Links</h3>
+          <ul class="footer-list">
+            <li><a href="#home" data-i18n="nav.home">Home</a></li>
+            <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="#writeups" data-i18n="nav.writeups">Writeups</a></li>
+            <li><a href="#contests" data-i18n="nav.contests">Contests</a></li>
+            <li><a href="#stack" data-i18n="nav.stack">Stack</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title" data-i18n="footer.contactTitle">Social &amp; Contact</h3>
+          <ul class="footer-list">
+            <li>
+              <a href="#contact" data-mailto-link data-email-text>crishoang09 [at] gmail.com</a>
+              <button type="button" data-copy-email class="btn-outline" data-i18n="footer.copyEmail">Copy email</button>
+              <span id="copy-status" class="copy-status" role="status" aria-live="polite"></span>
+            </li>
+            <li>
+              <a href="https://github.com/CrisDevil222" data-github-link target="_blank" rel="noopener noreferrer">github.com/CrisDevil222</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Phạm Hoàng Sơn. <span data-i18n="footer.rights">All rights reserved.</span></p>
+        <button type="button" id="effects-toggle" class="effects-toggle-btn" aria-pressed="true">Effects: On</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/effects.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
