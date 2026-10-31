@@ -1,0 +1,551 @@
+{
+  "profile": {
+    "name": "Phạm Hoàng Sơn",
+    "shortName": "Sơn",
+    "monogram": "S",
+    "sealText": "Security • Code • CTF •",
+    "bio": {
+      "en": "Information Security student who builds security labs, web platforms and mobile apps with Python, TypeScript and JavaScript.",
+      "vi": "Sinh viên An toàn Thông tin xây dựng các phòng lab bảo mật, nền tảng web và ứng dụng di động với Python, TypeScript và JavaScript."
+    },
+    "copyrightYear": 2026
+  },
+  "effects": {
+    "level": "rich"
+  },
+  "links": {
+    "github": "https://github.com/CrisDevil222",
+    "linkedin": null,
+    "emailUser": "crishoang09",
+    "emailDomain": "gmail.com",
+    "siteUrl": "https://crisdevil222.github.io/"
+  },
+  "projects": [
+    {
+      "id": "cybersec-lab",
+      "featured": true,
+      "priority": 1,
+      "name": "CyberSec Lab",
+      "tagline": {
+        "en": "Security Training & Monitoring Platform",
+        "vi": "Nền tảng huấn luyện & giám sát an ninh mạng"
+      },
+      "tech": [
+        "Python",
+        "Flask",
+        "WebSocket",
+        "scikit-learn",
+        "Docker"
+      ],
+      "bullets": {
+        "en": [
+          "Built a cybersecurity platform featuring Red Team labs (XSS, SQLi, Command Injection) and a Blue Team defense dashboard.",
+          "Engineered real-time SOC monitoring over WebSocket alongside an ML-based phishing URL detector and port scanner.",
+          "Secured the platform with TOTP 2FA and RBAC, containerized and deployed via Docker."
+        ],
+        "vi": [
+          "Xây dựng nền tảng an ninh mạng gồm các lab Red Team (XSS, SQLi, Command Injection) và dashboard Blue Team.",
+          "Giám sát SOC theo thời gian thực bằng WebSocket, kèm bộ phát hiện URL phishing dựa trên ML và port scanner.",
+          "Bảo mật hệ thống bằng TOTP 2FA và RBAC, đóng gói và triển khai bằng Docker."
+        ]
+      },
+      "caseStudy": {
+        "problem": {
+          "en": "Needed a unified environment for practicing offensive web vulnerabilities while observing defensive telemetry in real time.",
+          "vi": "Cần một môi trường thực hành tấn công/phòng thủ tập trung, cho phép vừa khai thác lỗ hổng vừa quan sát log cảnh báo theo thời gian thực."
+        },
+        "approach": {
+          "en": "Separated Red Team vulnerable labs from the Blue Team SOC dashboard and connected live event streams over WebSocket.",
+          "vi": "Tách biệt các lab Red Team và bảng điều khiển Blue Team SOC, truyền phát sự kiện bảo mật trực tiếp qua kênh WebSocket."
+        },
+        "keyDecisions": {
+          "en": "Implemented TOTP 2FA + RBAC for access control, integrated a scikit-learn model for phishing URL detection alongside a port scanner, and packaged the stack with Docker.",
+          "vi": "Áp dụng TOTP 2FA + RBAC để kiểm soát truy cập, tích hợp mô hình scikit-learn phát hiện URL phishing cùng port scanner, và đóng gói toàn bộ bằng Docker."
+        },
+        "result": "TODO",
+        "learned": "TODO"
+      },
+      "repoUrl": "https://github.com/CrisDevil222/cyber-sec-lab",
+      "githubRepo": "CrisDevil222/cyber-sec-lab",
+      "demoUrl": "",
+      "isClientProject": false
+    },
+    {
+      "id": "math-ai-lab",
+      "featured": true,
+      "priority": 2,
+      "name": "Math AI Lab",
+      "tagline": {
+        "en": "2D/3D Math Visualization Mobile App",
+        "vi": "Ứng dụng mobile trực quan hóa toán 2D/3D"
+      },
+      "tech": [
+        "JavaScript",
+        "Capacitor",
+        "Swift",
+        "Groq API",
+        "GitHub Actions"
+      ],
+      "bullets": {
+        "en": [
+          "Cross-platform iOS/Android mobile app featuring an interactive 3D spatial geometry viewer and advanced 2D graphing calculator.",
+          "Integrated an LLM assistant (Groq API) to construct 3D geometry scenes from Vietnamese prompts alongside symbolic calculus analysis.",
+          "Authored native Swift plugins for iOS and automated .ipa/.apk release pipelines using GitHub Actions CI/CD."
+        ],
+        "vi": [
+          "Ứng dụng đa nền tảng iOS/Android có trình xem hình học không gian 3D và công cụ vẽ đồ thị 2D nâng cao.",
+          "Tích hợp trợ lý LLM (Groq API) để dựng hình 3D từ câu lệnh tiếng Việt, cùng thuật toán phân tích giải tích.",
+          "Viết plugin Swift cho iOS và tự động hóa pipeline phát hành .ipa/.apk bằng GitHub Actions CI/CD."
+        ]
+      },
+      "caseStudy": {
+        "problem": {
+          "en": "Visualizing 3D spatial geometry and calculus functions on mobile devices is often cumbersome without natural language input.",
+          "vi": "Việc dựng hình học không gian 3D và khảo sát hàm số trên thiết bị di động thường phức tạp nếu thiếu công cụ nhập liệu tự nhiên."
+        },
+        "approach": {
+          "en": "Built a cross-platform iOS/Android app with Capacitor combining 3D spatial rendering, 2D graphing, calculus analysis, and an LLM assistant.",
+          "vi": "Phát triển ứng dụng iOS/Android đa nền tảng bằng Capacitor kết hợp trình xem 3D, vẽ đồ thị 2D, giải tích và trợ lý LLM."
+        },
+        "keyDecisions": {
+          "en": "Used Groq API to generate 3D geometry from Vietnamese prompts, wrote custom Swift plugins for iOS, and automated .ipa/.apk builds via GitHub Actions CI/CD.",
+          "vi": "Tích hợp Groq API để sinh hình 3D từ câu lệnh tiếng Việt, viết plugin Swift riêng cho iOS và tự động hóa phát hành .ipa/.apk bằng GitHub Actions."
+        },
+        "result": "TODO",
+        "learned": "TODO"
+      },
+      "repoUrl": "https://github.com/CrisDevil222/Math-AI-Lab",
+      "githubRepo": "CrisDevil222/Math-AI-Lab",
+      "demoUrl": "",
+      "isClientProject": false
+    },
+    {
+      "id": "tms-client",
+      "featured": false,
+      "priority": 3,
+      "name": "Transport Management System (TMS)",
+      "tagline": {
+        "en": "Client Project — Container Logistics Platform",
+        "vi": "Dự án cho khách hàng — Nền tảng quản lý vận tải"
+      },
+      "tech": [
+        "TypeScript",
+        "Next.js 14+",
+        "Prisma",
+        "PostgreSQL"
+      ],
+      "bullets": {
+        "en": [
+          "Developed a custom logistics platform replacing manual spreadsheet workflows for a container transport business.",
+          "Built core operational modules: shipment tracking, vehicle dispatch, and customer management with dynamic filtering.",
+          "Worked directly with the client to implement automated PDF transport orders and invoice export features."
+        ],
+        "vi": [
+          "Phát triển nền tảng logistics tùy biến thay thế quy trình bảng tính thủ công cho doanh nghiệp vận tải container.",
+          "Xây dựng các module cốt lõi: theo dõi lô hàng, điều phối xe, quản lý khách hàng với bộ lọc động.",
+          "Làm việc trực tiếp với khách hàng để hiện thực hóa lệnh vận chuyển PDF tự động và tính năng xuất hóa đơn."
+        ]
+      },
+      "caseStudy": {
+        "problem": {
+          "en": "Manual spreadsheet workflows made container tracking, vehicle dispatch, and invoice generation slow and difficult to manage.",
+          "vi": "Quy trình bảng tính thủ công khiến việc theo dõi lô hàng, điều phối xe container và xuất hóa đơn tốn thời gian, khó đồng bộ."
+        },
+        "approach": {
+          "en": "Designed a centralized web application with Next.js 14+ and PostgreSQL covering shipment lifecycle tracking, dispatch, and customer records.",
+          "vi": "Xây dựng nền tảng web tập trung bằng Next.js 14+ và PostgreSQL quản lý xuyên suốt lô hàng, điều phối xe và thông tin khách hàng."
+        },
+        "keyDecisions": {
+          "en": "Used TypeScript and Prisma ORM with PostgreSQL for type-safe data access, added dynamic filtering, and built automated PDF transport orders and billing exports directly from client requirements.",
+          "vi": "Sử dụng TypeScript và Prisma ORM với PostgreSQL để đảm bảo an toàn kiểu dữ liệu, thiết kế bộ lọc động và tự động hóa xuất lệnh vận chuyển PDF cùng hóa đơn theo đúng nghiệp vụ khách hàng."
+        },
+        "result": "TODO",
+        "learned": "TODO"
+      },
+      "repoUrl": null,
+      "githubRepo": null,
+      "demoUrl": null,
+      "isClientProject": true,
+      "clientBadge": {
+        "en": "Client project – demo upon request",
+        "vi": "Dự án khách hàng – demo theo yêu cầu"
+      },
+      "clientCta": {
+        "en": "Contact for demo",
+        "vi": "Liên hệ để xem demo"
+      }
+    }
+  ],
+  "writeups": [
+    {
+      "id": "plottergeist",
+      "title": "Plottergeist (Acoustic Side-Channel)",
+      "eventId": "hacktheon-sejong-2026",
+      "eventName": "Hacktheon Sejong 2026",
+      "eventUrl": "https://app.notion.com/p/Hacktheon-Sejong-2026-34d95c7f0a5f80648a36d2a7a29f72c3",
+      "category": "Forensics / Misc",
+      "filterGroup": "Forensics",
+      "points": null,
+      "difficulty": null,
+      "tools": [
+        "Python",
+        "Scapy",
+        "SciPy",
+        "NumPy",
+        "Matplotlib"
+      ],
+      "langBadge": "EN",
+      "date": "TODO",
+      "summary": {
+        "en": "Reconstructed the flag drawn by a CoreXY plotter by decoding stepper motor packets from a PCAP capture and using audio RMS energy to separate active pen strokes from travel moves.",
+        "vi": "Dựng lại flag do máy vẽ CoreXY viết ra bằng cách giải mã gói tin bước motor từ file PCAP, rồi dùng năng lượng RMS của âm thanh để tách nét vẽ thật khỏi các đoạn di chuyển."
+      },
+      "url": "https://app.notion.com/p/Forensics-Plottergeist-Acoustic-Side-Channel-Writeup-34d95c7f0a5f80829873f880eae816bd"
+    },
+    {
+      "id": "sqli-bypass-login",
+      "title": "SQL Injection – Bypass Login",
+      "eventId": "hacktheon-sejong-2026",
+      "eventName": "Hacktheon Sejong 2026",
+      "eventUrl": "https://app.notion.com/p/Hacktheon-Sejong-2026-34d95c7f0a5f80648a36d2a7a29f72c3",
+      "category": "Web",
+      "filterGroup": "Web",
+      "points": null,
+      "difficulty": null,
+      "tools": [
+        "Python (Flask)",
+        "SQLite"
+      ],
+      "langBadge": "EN",
+      "date": "TODO",
+      "summary": {
+        "en": "Bypassed admin authentication caused by raw f-string SQL query concatenation, documented alongside the remediation using parameterized queries.",
+        "vi": "Bypass đăng nhập admin do câu truy vấn nối chuỗi bằng f-string; kèm cách vá lỗ hổng bằng parameterized query."
+      },
+      "url": "https://app.notion.com/p/Hacktheon-Sejong-2026-34d95c7f0a5f80648a36d2a7a29f72c3"
+    },
+    {
+      "id": "dark-harbor",
+      "title": "Dark Harbor",
+      "eventId": "hacktheon-sejong-2026",
+      "eventName": "Hacktheon Sejong 2026",
+      "eventUrl": "https://app.notion.com/p/Hacktheon-Sejong-2026-34d95c7f0a5f80648a36d2a7a29f72c3",
+      "category": "Web",
+      "filterGroup": "Web",
+      "points": null,
+      "difficulty": null,
+      "tools": [
+        "Rust proxy",
+        "Node.js/Fastify",
+        "Go",
+        "Python/FastAPI"
+      ],
+      "langBadge": "EN",
+      "date": "TODO",
+      "summary": {
+        "en": "Chained an SSRF via the build-runner redirect mechanism with a URL-encoding handling flaw across a polyglot microservice architecture to read internal files behind the proxy.",
+        "vi": "Nối chuỗi SSRF qua cơ chế redirect của build-runner với lỗi xử lý URL-encoding trong API kiến trúc microservice để đọc file nội bộ nằm sau proxy."
+      },
+      "url": "https://app.notion.com/p/Hacktheon-Sejong-2026-34d95c7f0a5f80648a36d2a7a29f72c3"
+    },
+    {
+      "id": "voice-clone",
+      "title": "Voice Clone",
+      "eventId": "hacktheon-sejong-2026",
+      "eventName": "Hacktheon Sejong 2026",
+      "eventUrl": "https://app.notion.com/p/Hacktheon-Sejong-2026-34d95c7f0a5f80648a36d2a7a29f72c3",
+      "category": "AI / Misc",
+      "filterGroup": "AI / Misc",
+      "points": null,
+      "difficulty": null,
+      "tools": [
+        "Python",
+        "Coqui TTS (YourTTS)",
+        "FFmpeg",
+        "Miniconda"
+      ],
+      "langBadge": "EN",
+      "date": "TODO",
+      "summary": {
+        "en": "Performed zero-shot voice cloning from 5 reference audio samples to pass both speaker similarity and speech-to-text verification thresholds (> 0.8).",
+        "vi": "Nhân bản giọng nói zero-shot từ 5 file mẫu để vượt ngưỡng độ tương đồng giọng và văn bản (> 0.8) của hệ thống chấm."
+      },
+      "url": "https://app.notion.com/p/Hacktheon-Sejong-2026-34d95c7f0a5f80648a36d2a7a29f72c3"
+    },
+    {
+      "id": "immutable",
+      "title": "Immutable",
+      "eventId": "hacktheon-sejong-2026",
+      "eventName": "Hacktheon Sejong 2026",
+      "eventUrl": "https://app.notion.com/p/Hacktheon-Sejong-2026-34d95c7f0a5f80648a36d2a7a29f72c3",
+      "category": "PWN",
+      "filterGroup": "PWN",
+      "points": "250 pts",
+      "difficulty": null,
+      "tools": [
+        "Python",
+        "netcat"
+      ],
+      "langBadge": "EN",
+      "date": "TODO",
+      "summary": {
+        "en": "Exploited a stack buffer overflow via unbounded scanf(\"%s\") to overwrite an adjacent local variable, bypass the check, and spawn a shell.",
+        "vi": "Khai thác lỗi stack buffer overflow qua hàm scanf(\"%s\") để ghi đè biến cục bộ kế bên, vượt điều kiện kiểm tra và mở shell."
+      },
+      "url": "https://app.notion.com/p/Hacktheon-Sejong-2026-34d95c7f0a5f80648a36d2a7a29f72c3"
+    },
+    {
+      "id": "recover-it",
+      "title": "Recover It!",
+      "eventId": "hacktheon-sejong-2026",
+      "eventName": "Hacktheon Sejong 2026",
+      "eventUrl": "https://app.notion.com/p/Hacktheon-Sejong-2026-34d95c7f0a5f80648a36d2a7a29f72c3",
+      "category": "Reverse Engineering",
+      "filterGroup": "Reverse",
+      "points": null,
+      "difficulty": null,
+      "tools": [
+        "Ghidra",
+        "Python"
+      ],
+      "langBadge": "EN",
+      "date": "TODO",
+      "summary": {
+        "en": "Reverse-engineered an index-based XOR transformation over static data tables in the binary and wrote a Python solver to recover the valid input string.",
+        "vi": "Dịch ngược thuật toán XOR theo chỉ số trên bảng dữ liệu tĩnh trong binary và viết script Python khôi phục chuỗi đầu vào đúng."
+      },
+      "url": "https://app.notion.com/p/Hacktheon-Sejong-2026-34d95c7f0a5f80648a36d2a7a29f72c3"
+    },
+    {
+      "id": "beautiful-memory",
+      "title": "Beautiful Memory",
+      "eventId": "bkisc-ctf-2026",
+      "eventName": "BKISC CTF 2026",
+      "eventUrl": "https://app.notion.com/p/BKISC-CTF-2026-2a495c7f0a5f80919218c5f149edfa35",
+      "category": "Forensics / Memory Analysis",
+      "filterGroup": "Forensics",
+      "points": "280 pts",
+      "difficulty": "Medium",
+      "tools": [
+        "file",
+        "strings",
+        "Volatility 2"
+      ],
+      "langBadge": "VI",
+      "date": "TODO",
+      "summary": {
+        "en": "Analyzed a Windows 10 memory dump, extracting the real flag encoded in UTF-16LE strings while filtering out decoy ASCII flags.",
+        "vi": "Phân tích bản dump bộ nhớ Windows 10, tìm flag thật trong chuỗi UTF-16LE và loại bỏ các flag giả dạng ASCII."
+      },
+      "url": "https://app.notion.com/p/BKISC-CTF-2026-2a495c7f0a5f80919218c5f149edfa35"
+    },
+    {
+      "id": "lookout",
+      "title": "Lookout",
+      "eventId": "bkisc-ctf-2026",
+      "eventName": "BKISC CTF 2026",
+      "eventUrl": "https://app.notion.com/p/BKISC-CTF-2026-2a495c7f0a5f80919218c5f149edfa35",
+      "category": "Digital Forensics / Network Analysis",
+      "filterGroup": "Forensics",
+      "points": "275 pts",
+      "difficulty": "Medium–Hard",
+      "tools": [
+        "FTK Imager",
+        "Python"
+      ],
+      "langBadge": "VI",
+      "date": "TODO",
+      "summary": {
+        "en": "Reconstructed a multi-stage attack chain from a malicious Excel DDE payload to PowerShell and Outlook WebView (Specula) C2 persistence, decrypting RC4 traffic.",
+        "vi": "Dựng lại chuỗi tấn công từ file Excel độc hại (DDE) đến PowerShell và C2 qua Outlook WebView (Specula), giải mã lưu lượng C2 và dữ liệu mã hóa RC4."
+      },
+      "url": "https://app.notion.com/p/BKISC-CTF-2026-2a495c7f0a5f80919218c5f149edfa35"
+    }
+  ],
+  "contests": [
+    {
+      "id": "cscv",
+      "name": {
+        "en": "Cybersecurity Student Contest Vietnam (CSCV)",
+        "vi": "Cybersecurity Student Contest Vietnam (CSCV)"
+      },
+      "period": "2025, 2026",
+      "description": {
+        "en": "National student cybersecurity competition featuring Jeopardy and Attack-Defense CTF rounds.",
+        "vi": "Cuộc thi Sinh viên với An toàn thông tin cấp quốc gia với các vòng thi Jeopardy và Attack-Defense CTF."
+      },
+      "writeupEventId": null,
+      "result": "TODO"
+    },
+    {
+      "id": "rmit-hackathon",
+      "name": {
+        "en": "RMIT Hackathon",
+        "vi": "RMIT Hackathon"
+      },
+      "period": "2025, 2026",
+      "description": {
+        "en": "2025 (Certificate of Participation), 2026 — Team software engineering and rapid prototyping competition.",
+        "vi": "2025 (Có giấy chứng nhận tham gia), 2026 — Cuộc thi phát triển giải pháp kỹ thuật và sản phẩm mẫu theo nhóm."
+      },
+      "writeupEventId": null,
+      "result": "TODO",
+      "project": {
+        "category": {
+          "en": "Challenge 2 \"UNLOCKED\" by Tide (Prototype with TideCloak, where no single admin, organization, or AI can bypass the rules).",
+          "vi": "Hạng mục Challenge 2 \"UNLOCKED\" của Tide (Xây prototype với TideCloak, nơi không một quản trị viên, tổ chức hay AI đơn lẻ nào có thể tự ý vượt quy tắc)."
+        },
+        "name": "ClubFund Guard",
+        "summary": {
+          "en": "AI assistant for student club finances: AI reads ledgers and drafts expense proposals but NEVER executes transactions autonomously; funds can only be disbursed after approval from 2 out of 3 managers. Spending authority is a designated role; granting this role creates a TideCloak change request requiring a 2/3 administrator quorum approved from their respective browsers in Tide enclaves. The API verifies DPoP-bound tokens and returns 403 if the role is missing, leaving an immutable audit trail.",
+          "vi": "Trợ lý AI cho quỹ câu lạc bộ sinh viên: AI đọc sổ quỹ và soạn đề xuất chi nhưng KHÔNG bao giờ tự chi tiền; khoản chi chỉ thực hiện được sau khi đủ 2 trong 3 người quản lý phê duyệt. Quyền chi tiền là một role; cấp role tạo một change request trong TideCloak cần ngưỡng 2/3 quản trị viên, mỗi người duyệt từ trình duyệt của mình trong Tide enclave. API kiểm tra token gắn DPoP và trả 403 nếu thiếu role. Mỗi lần cấp quyền để lại một change request có thể kiểm tra lại (audit)."
+        },
+        "limitations": {
+          "en": "AI assistant is a rule-based mock implementation, and financial data is simulated. Real LLMs and live money are not integrated.",
+          "vi": "Trợ lý AI là bản mock theo quy tắc (rule-based), dữ liệu quỹ là dữ liệu giả. Không tích hợp LLM thật hoặc tiền thật."
+        },
+        "tech": [
+          "TideCloak",
+          "Next.js",
+          "Node.js",
+          "JavaScript",
+          "Docker"
+        ],
+        "eventUrl": "https://tide.org/unlocked/",
+        "repoUrl": "https://github.com/CrisDevil222/hackathon",
+        "demoVideoUrl": "https://github.com/CrisDevil222/hackathon/blob/main/Video.mp4",
+        "repoPublished": true,
+        "caseStudy": {
+          "problem": {
+            "en": "Student clubs traditionally rely on a single treasurer, and autonomous AI acting alone only magnifies operational risk.",
+            "vi": "Câu lạc bộ thường tin một thủ quỹ duy nhất, và AI hành động một mình còn làm rủi ro tệ hơn."
+          },
+          "approach": {
+            "en": "Separated operational responsibilities: AI drafts proposals, humans make governance decisions, and cryptography enforces authorization.",
+            "vi": "Tách vai trò: AI soạn đề xuất, con người quyết định, mật mã học thực thi quyết định."
+          },
+          "keyDecisions": {
+            "en": "Treated disbursement authority as an explicit role, utilized TideCloak's 2/3 decentralized quorum instead of trusted server flags, and validated DPoP cryptographic tokens at the API gateway.",
+            "vi": "Coi \"chi tiền\" là một role, dùng quorum 2/3 của TideCloak thay vì nút bấm máy chủ tin tưởng, API xác thực token DPoP."
+          },
+          "result": {
+            "en": "Demonstrated complete decentralized multi-party authorization workflow with audit logging (demo video in repository). Competition result: TODO.",
+            "vi": "Hiện thực hóa quy trình phê duyệt đa bên phi tập trung với nhật ký kiểm tra audit (có video demo trong repo). Kết quả cuộc thi: TODO."
+          },
+          "learned": "TODO"
+        }
+      }
+    },
+    {
+      "id": "hacktheon-sejong-2026",
+      "name": {
+        "en": "Hacktheon Sejong 2026",
+        "vi": "Hacktheon Sejong 2026"
+      },
+      "period": "2026",
+      "description": {
+        "en": "International university cybersecurity competition covering Web, Forensics, PWN, Reverse Engineering, and AI challenges.",
+        "vi": "Cuộc thi an toàn thông tin đại học quốc tế với các thử thách Web, Forensics, PWN, Reverse Engineering và AI."
+      },
+      "writeupEventId": "hacktheon-sejong-2026",
+      "writeupLabelSuffix": {
+        "en": "challenge writeups (Web, Forensics, PWN, Reverse, AI)",
+        "vi": "challenge writeups (Web, Forensics, PWN, Reverse, AI)"
+      },
+      "result": "TODO"
+    },
+    {
+      "id": "bkisc-ctf-2026",
+      "name": {
+        "en": "BKISC CTF 2026",
+        "vi": "BKISC CTF 2026"
+      },
+      "period": "2026",
+      "description": {
+        "en": "Capture The Flag competition focusing on Memory Forensics, Disk Forensics, and Network Incident Analysis.",
+        "vi": "Giải đấu Capture The Flag tập trung vào điều tra bộ nhớ, phân tích đĩa và truy vết lưu lượng mạng."
+      },
+      "writeupEventId": "bkisc-ctf-2026",
+      "writeupLabelSuffix": {
+        "en": "forensics writeups",
+        "vi": "forensics writeups"
+      },
+      "result": "TODO"
+    },
+    {
+      "id": "other-ctfs",
+      "name": {
+        "en": "Other Domestic & International CTF Competitions",
+        "vi": "Các cuộc thi CTF trong nước và quốc tế khác"
+      },
+      "period": "Ongoing",
+      "description": {
+        "en": "Regularly practicing and competing in Web Exploitation, Reverse Engineering, and Digital Forensics.",
+        "vi": "Thường xuyên luyện tập và thi đấu các mảng Web Exploitation, Reverse Engineering và Digital Forensics."
+      },
+      "writeupEventId": null,
+      "result": "TODO"
+    }
+  ],
+  "stack": [
+    {
+      "id": "languages",
+      "icon": "code",
+      "title": {
+        "en": "Languages",
+        "vi": "Ngôn ngữ lập trình"
+      },
+      "items": [
+        "Python",
+        "TypeScript",
+        "JavaScript",
+        "SQL",
+        "Swift"
+      ]
+    },
+    {
+      "id": "frameworks",
+      "icon": "layers",
+      "title": {
+        "en": "Frameworks & Libs",
+        "vi": "Frameworks & Thư viện"
+      },
+      "items": [
+        "Flask",
+        "Next.js",
+        "Node.js",
+        "Prisma",
+        "scikit-learn",
+        "Capacitor",
+        "WebSocket"
+      ]
+    },
+    {
+      "id": "data",
+      "icon": "database",
+      "title": {
+        "en": "Data",
+        "vi": "Cơ sở dữ liệu"
+      },
+      "items": [
+        "PostgreSQL"
+      ]
+    },
+    {
+      "id": "devops",
+      "icon": "terminal",
+      "title": {
+        "en": "DevOps & Tools",
+        "vi": "DevOps & Công cụ"
+      },
+      "items": [
+        "Docker",
+        "Git",
+        "GitHub Actions (CI/CD)",
+        "Linux (Kali/Ubuntu)",
+        "VS Code",
+        "Groq API (LLM integration)"
+      ]
+    }
+  ]
+}

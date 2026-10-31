@@ -1,0 +1,160 @@
+{
+  "en": {
+    "metaTitle": "Phạm Hoàng Sơn | Information Security Student & Developer",
+    "metaDescription": "Portfolio of Phạm Hoàng Sơn — Information Security student who builds security labs, web platforms and mobile apps with Python, TypeScript and JavaScript.",
+    "skipToContent": "Skip to main content",
+    "nav": {
+      "home": "Home",
+      "projects": "Projects",
+      "writeups": "Writeups",
+      "contests": "Contests",
+      "stack": "Stack",
+      "contact": "Contact",
+      "contactMe": "Contact me",
+      "toggleMenu": "Toggle navigation menu",
+      "toggleLang": "Switch language to Vietnamese"
+    },
+    "hero": {
+      "greeting": "Hi, I'm",
+      "ctaPrimary": "Contact me",
+      "ctaSecondary": "View projects →"
+    },
+    "projects": {
+      "kicker": "PROJECTS",
+      "titlePrefix": "Featured ",
+      "titleHighlight": "projects",
+      "desc": "Selected software platforms and security labs with technical architecture case studies.",
+      "repoBtn": "Repository",
+      "demoBtn": "Live Demo",
+      "viewCaseStudy": "View case study",
+      "csProblem": "Problem",
+      "csApproach": "Approach",
+      "csDecisions": "Key decisions",
+      "csResult": "Result",
+      "csLearned": "What I learned"
+    },
+    "writeups": {
+      "kicker": "CTF WRITEUPS",
+      "titlePrefix": "Technical ",
+      "titleHighlight": "writeups",
+      "desc": "Challenge breakdowns and exploit analyses across Web, Forensics, PWN, Reverse Engineering, and AI.",
+      "allEvents": "All Contests",
+      "allCategories": "All Categories",
+      "readWriteup": "Read writeup →",
+      "writeupsUnit": "writeups"
+    },
+    "contests": {
+      "kicker": "CONTESTS",
+      "titlePrefix": "Competitions & ",
+      "titleHighlight": "hackathons",
+      "desc": "Academic cybersecurity contests, CTF tournaments, and engineering hackathons.",
+      "resultLabel": "Achievement:",
+      "viewProject": "View hackathon project & case study",
+      "limitationsLabel": "Limitations:",
+      "eventPageBtn": "Event page",
+      "repoBtn": "Repo",
+      "videoBtn": "Demo video"
+    },
+    "stack": {
+      "kicker": "SPECIALITIES",
+      "titlePrefix": "Tech ",
+      "titleHighlight": "stack",
+      "desc": "Languages, frameworks, database systems, and developer tooling used across my work."
+    },
+    "cta": {
+      "titlePrefix": "Want to ",
+      "titleHighlight": "work together?",
+      "desc": "Available for software engineering and information security internship opportunities.",
+      "button": "Contact me"
+    },
+    "footer": {
+      "tagline": "Information Security student building practical security labs, web platforms, and mobile apps.",
+      "quickLinks": "Quick Links",
+      "contactTitle": "Social & Contact",
+      "copyEmail": "Copy email",
+      "copied": "Copied!",
+      "effectsOn": "Effects: On",
+      "effectsOff": "Effects: Off",
+      "rights": "All rights reserved."
+    }
+  },
+  "vi": {
+    "metaTitle": "Phạm Hoàng Sơn | Sinh viên An toàn Thông tin & Lập trình viên",
+    "metaDescription": "Portfolio của Phạm Hoàng Sơn — Sinh viên An toàn Thông tin xây dựng các phòng lab bảo mật, nền tảng web và ứng dụng di động với Python, TypeScript và JavaScript.",
+    "skipToContent": "Chuyển tới nội dung chính",
+    "nav": {
+      "home": "Trang chủ",
+      "projects": "Dự án",
+      "writeups": "Writeups",
+      "contests": "Cuộc thi",
+      "stack": "Kỹ năng",
+      "contact": "Liên hệ",
+      "contactMe": "Liên hệ ngay",
+      "toggleMenu": "Mở/đóng menu điều hướng",
+      "toggleLang": "Chuyển ngôn ngữ sang Tiếng Anh"
+    },
+    "hero": {
+      "greeting": "Xin chào, tôi là",
+      "ctaPrimary": "Liên hệ ngay",
+      "ctaSecondary": "Xem dự án →"
+    },
+    "projects": {
+      "kicker": "PROJECTS",
+      "titlePrefix": "Dự án ",
+      "titleHighlight": "tiêu biểu",
+      "desc": "Các dự án phát triển phần mềm và an ninh mạng trọng tâm kèm phân tích case study kỹ thuật.",
+      "repoBtn": "Mã nguồn",
+      "demoBtn": "Bản chạy thử",
+      "viewCaseStudy": "Xem case study",
+      "csProblem": "Vấn đề (Problem)",
+      "csApproach": "Cách tiếp cận (Approach)",
+      "csDecisions": "Quyết định kỹ thuật (Key decisions)",
+      "csResult": "Kết quả (Result)",
+      "csLearned": "Bài học (What I learned)"
+    },
+    "writeups": {
+      "kicker": "CTF WRITEUPS",
+      "titlePrefix": "Bài giải ",
+      "titleHighlight": "CTF Writeups",
+      "desc": "Phân tích kỹ thuật và hướng xử lý các thử thách Web, Forensics, PWN, Reverse Engineering và AI.",
+      "allEvents": "Tất cả cuộc thi",
+      "allCategories": "Tất cả thể loại",
+      "readWriteup": "Đọc writeup →",
+      "writeupsUnit": "bài writeup"
+    },
+    "contests": {
+      "kicker": "CONTESTS",
+      "titlePrefix": "Cuộc thi & ",
+      "titleHighlight": "Hackathon",
+      "desc": "Các kỳ thi an toàn thông tin sinh viên, giải đấu CTF và cuộc thi lập trình.",
+      "resultLabel": "Thành tích:",
+      "viewProject": "Xem dự án hackathon & case study",
+      "limitationsLabel": "Giới hạn giải pháp:",
+      "eventPageBtn": "Trang sự kiện",
+      "repoBtn": "Mã nguồn",
+      "videoBtn": "Video demo"
+    },
+    "stack": {
+      "kicker": "SPECIALITIES",
+      "titlePrefix": "Công nghệ & ",
+      "titleHighlight": "Kỹ năng",
+      "desc": "Ngôn ngữ lập trình, framework, cơ sở dữ liệu và công cụ triển khai trong CV."
+    },
+    "cta": {
+      "titlePrefix": "Sẵn sàng ",
+      "titleHighlight": "hợp tác?",
+      "desc": "Tôi đang tìm kiếm cơ hội thực tập sinh Lập trình / An toàn thông tin. Hãy liên hệ trực tiếp qua email.",
+      "button": "Liên hệ ngay"
+    },
+    "footer": {
+      "tagline": "Sinh viên An toàn Thông tin xây dựng các phòng lab bảo mật, nền tảng web và ứng dụng di động.",
+      "quickLinks": "Liên kết nhanh",
+      "contactTitle": "Mạng xã hội & Liên hệ",
+      "copyEmail": "Sao chép email",
+      "copied": "Đã chép!",
+      "effectsOn": "Effects: On",
+      "effectsOff": "Effects: Off",
+      "rights": "Bản quyền được bảo lưu."
+    }
+  }
+}
