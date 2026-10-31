@@ -28,7 +28,7 @@ jobs:
       - name: Check broken links with Lychee
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --verbose --no-progress --exclude-mail --exclude "notion\.com" --exclude "tide\.org" --accept 200,204,403,429 "./index.html" "./404.html"
+          args: --verbose --no-progress --exclude "notion\.com" --exclude "tide\.org" --accept 200,204,403,429 "./index.html" "./404.html"
           fail: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
