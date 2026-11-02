@@ -91,6 +91,31 @@ body {
   overflow-x: hidden;
 }
 
+/* Background code-rain canvas & central vignette */
+.code-rain-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+  pointer-events: none;
+}
+
+.code-rain-vignette {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 85% 75% at 50% 50%,
+    rgba(7, 8, 13, 0.88) 0%,
+    rgba(7, 8, 13, 0.65) 55%,
+    rgba(7, 8, 13, 0.28) 100%
+  );
+}
+
 main {
   flex: 1;
 }

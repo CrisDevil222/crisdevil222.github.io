@@ -141,6 +141,7 @@
     if (btn) { btn.hidden = isRed(); btn.setAttribute("aria-pressed", String(lvl !== "off")); }
     if (lvl === "off") stopRafs(); else if (!cssScr) syncBar();
     obsCards(); obsText();
+    if (win.PHS_CODE_RAIN && typeof win.PHS_CODE_RAIN.update === "function") win.PHS_CODE_RAIN.update();
     if (typeof onChg === "function") onChg(lvl);
   }
 

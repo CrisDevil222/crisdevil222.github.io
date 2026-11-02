@@ -8,10 +8,11 @@ Designed in a **minimalist, modern Dark Indigo aesthetic (`#07080d` / `#3d4dff`)
 ## ✨ Key Features
 
 - **Minimalist Dark Indigo Design:** Clean dark-only palette (`--bg: #07080d`, `--surface: #0e1017`, `--primary: #3d4dff`, `--primary-soft: #6a74ff`), pill-shaped primary buttons, static SVG star/circle accents, and WCAG AA contrast compliance.
-- **Self-Hosted Three.js Hero Wireframe (`r187` / `0.187.0`) & Controlled 2D/3D Effects (`hero3d.js` + `effects.js` <= 15KB):**
-  - Renders a dual counter-rotating icosahedron wireframe with glowing vertex nodes, an `AdditiveBlending` particle field (~300 points desktop / ~120 mobile), a fake glow outer shell (zero post-processing), a 900ms `easeOutCubic` intro scale/fade, scroll-linked rotation/shift/fade, and pointer-proximity vertex brightening in `/assets/js/hero3d.js` using self-hosted **Three.js `0.187.0` (`r187`)** in `/assets/vendor/three/three.module.min.js` (MIT License).
-  - Controlled 2D page effects in `/assets/js/effects.js`: 2px top scroll progress bar (CSS `animation-timeline: scroll()` with passive scroll fallback), pointer spotlight on Hero and cards (`--mx` / `--my` on `hover: hover`), one-time 600ms text decode on headings (preserving `aria-label` & DOM spans), 60ms staggered card reveal (max 6 per batch), and one-time number counters for `site.json` project/writeup counts.
-  - Configurable via `"effects": { "level": "rich" }` (`"off" | "subtle" | "rich"`) in `site.json`, plus a user-controllable `"Effects: On/Off"` button in the footer (`localStorage`), and automatic `"off"` fallback when `prefers-reduced-motion: reduce` is enabled.
+- **Self-Hosted Three.js Hero Wireframe & Ambient Indigo Code Rain:**
+  - **Dynamic Indigo Code Rain (`/assets/js/code-rain.js`, <= 4KB pure Canvas 2D):** Ambient Matrix-style character streams (hex, binary, code symbols) in deep indigo tones (`#3d4dff` / `#6a74ff`) with occasional cyber keywords (`sudo`, `nmap`, `whoami`, `CTF`, `TideCloak`), subtle pointer-brightening, typed arrays (`Float32Array`), frame-rate throttling (30fps desktop / 20fps mobile), frame budget governor, and central radial vignette for WCAG AA readability.
+  - **Hero 3D Wireframe (`/assets/js/hero3d.js`):** Dual counter-rotating icosahedron wireframe with glowing vertex nodes, an `AdditiveBlending` particle field (~300 points desktop / ~120 mobile), a fake glow outer shell (zero post-processing), scroll-linked rotation/shift/fade, and pointer-proximity vertex brightening in `/assets/js/hero3d.js` using self-hosted **Three.js `0.187.0` (`r187`)** in `/assets/vendor/three/three.module.min.js` (MIT License).
+  - **Controlled 2D page effects in `/assets/js/effects.js`:** 2px top scroll progress bar (CSS `animation-timeline: scroll()` with passive scroll fallback), pointer spotlight on Hero and cards (`--mx` / `--my` on `hover: hover`), one-time 600ms text decode on headings (preserving `aria-label` & DOM spans), 60ms staggered card reveal (max 6 per batch), and one-time number counters for `site.json` project/writeup counts.
+  - **Unified Toggle Control:** Configurable via `"effects": { "level": "rich" }` (`"off" | "subtle" | "rich"`) in `site.json`, plus a user-controllable `"Effects: On/Off"` button in the footer (`localStorage`), and automatic `"off"` fallback when `prefers-reduced-motion: reduce` is enabled.
   - Loaded lazily via dynamic `import()` after `window.load` + `requestIdleCallback` so HTML, CSS, and Hero text render first (`CLS = 0`).
 - **Projects + Native HTML Case Studies:** Each project card includes a native `<details><summary>View case study</summary>...</details>` expandable breakdown (`Problem`, `Approach`, `Key decisions`, `Result`, `What I learned`) that works without JavaScript and via keyboard. Any field marked `"TODO"` in `site.json` is automatically hidden.
 - **CTF Writeups & Dynamic Event Counters:** Filterable writeups from **Hacktheon Sejong 2026** and **BKISC CTF 2026** with automatic per-contest counters, category/contest filters, language badges (`EN` / `VI`), and safe links to Notion writeups (zero flags, IPs, or raw payloads exposed).
@@ -43,6 +44,7 @@ Designed in a **minimalist, modern Dark Indigo aesthetic (`#07080d` / `#3d4dff`)
     ├── js/
     │   ├── main.js             # Data rendering, writeup filters, i18n, lazy 3D loader
     │   ├── hero3d.js           # Three.js icosahedron wireframe, particles, fake glow & lifecycle
+    │   ├── code-rain.js        # Matrix-style ambient indigo code rain (<= 4KB Canvas 2D)
     │   └── effects.js          # Controlled 2D effects (scroll bar, spotlight, decode, stagger, counters)
     ├── vendor/
     │   └── three/
